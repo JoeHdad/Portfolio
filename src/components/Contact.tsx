@@ -11,24 +11,24 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'saifhatem02@gmail.com',
-    href: 'mailto:saifhatem02@gmail.com',
+    value: 'yossefhaddad20@gmail.com',
+    href: 'mailto:yossefhaddad20@gmail.com',
     bg: 'bg-blue-700',
     iconColor: 'text-white',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/Trimbex',
-    href: 'https://github.com/Trimbex',
+    value: 'github.com/JoeHdad',
+    href: 'https://github.com/JoeHdad',
     bg: 'bg-gray-700',
     iconColor: 'text-white',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/saifhatem',
-    href: 'https://linkedin.com/in/saifhatem/',
+    value: 'linkedin.com/in/yousef-haddad-8b1a2b2a6',
+    href: 'https://www.linkedin.com/in/yousef-haddad-8b1a2b2a6',
     bg: 'bg-blue-800',
     iconColor: 'text-white',
   },
@@ -60,15 +60,7 @@ const StackOverflowIcon = () => (
   </svg>
 );
 
-const codingPlatforms = [
-  {
-    icon: LeetCodeIcon,
-    label: 'LeetCode',
-    href: 'https://leetcode.com/u/Trimbex/',
-    bg: 'bg-white',
-    iconColor: '',
-  },
-];
+const codingPlatforms = [];
 
 const ProfessionalSummary = () => (
   <Card className="glowing-card bg-gray-900/70 border-gray-800 rounded-xl transition-all duration-300 overflow-hidden h-full flex flex-col justify-center">
@@ -155,7 +147,7 @@ const ContactForm = () => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: '6366b413-532e-4b5f-a481-94beaf4e7564',
+          access_key: 'b10d5daa-7eb7-4705-9f1b-4d60e14063a3',
           firstName: formData.firstName,
           lastName: formData.lastName,
           email: formData.email,

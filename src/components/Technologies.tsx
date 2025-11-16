@@ -4,147 +4,41 @@ import { Button } from "@/components/ui/button";
 
 const techGroups = [
   {
-    label: 'Languages',
+    label: 'Languages & Frameworks',
     items: [
       { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', docs: 'https://developer.mozilla.org/docs/Web/JavaScript' },
       { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', docs: 'https://www.typescriptlang.org/docs/' },
-      { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', docs: 'https://docs.python.org/3/' },
-      { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', docs: 'https://docs.oracle.com/en/java/' },
-      { name: 'C++', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg', docs: 'https://isocpp.org/std/the-standard' },
-      { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg', docs: 'https://docs.microsoft.com/en-us/dotnet/csharp/' },
-      { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', docs: 'https://developer.mozilla.org/docs/Web/HTML' },
-      { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', docs: 'https://developer.mozilla.org/docs/Web/CSS' },
-      { name: 'Verilog', icon: 'https://www.svgrepo.com/show/374042/verilog.svg', docs: 'https://www.chipverify.com/verilog/verilog-tutorial' },
-    ],
-  },
-  {
-    label: 'Frontend',
-    items: [
       { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', docs: 'https://react.dev/' },
       { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', docs: 'https://nextjs.org/docs' },
-      { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg', docs: 'https://angular.io/docs' },
-      { name: 'Tailwind CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', docs: 'https://tailwindcss.com/docs' },
-      { name: 'Redux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', docs: 'https://redux.js.org/' },
-      { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', docs: 'https://getbootstrap.com/' },
-      { name: 'Material UI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg', docs: 'https://mui.com/' },
-      { name: 'jQuery', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg', docs: 'https://api.jquery.com/' },
-    ],
-  },
-  {
-    label: 'Backend',
-    items: [
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', docs: 'https://nodejs.org/en/docs' },
-      { name: 'Express.js', icon: 'https://cdn.simpleicons.org/express/ffffff', docs: 'https://expressjs.com/' },
-      { name: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg', docs: 'https://docs.djangoproject.com/' },
-      { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg', docs: 'https://fastapi.tiangolo.com/' },
-      { name: 'GraphQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg', docs: 'https://graphql.org/learn/' },
-      { name: 'REST', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original-wordmark.svg', docs: 'https://restfulapi.net/' },
-      { name: 'Supabase', icon: 'https://avatars.githubusercontent.com/u/54469796?s=200&v=4', docs: 'https://supabase.com/docs' },
+      { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', docs: 'https://docs.python.org/3/' },
     ],
   },
   {
-    label: 'Database',
+    label: 'Styling & Tools',
     items: [
-      { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', docs: 'https://www.mongodb.com/docs/' },
-      { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', docs: 'https://www.postgresql.org/docs/' },
-      { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', docs: 'https://dev.mysql.com/doc/' },
-      { name: 'SQLite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', docs: 'https://www.sqlite.org/docs.html' },
-      { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg', docs: 'https://redis.io/docs/' },
-      { name: 'Supabase', icon: 'https://avatars.githubusercontent.com/u/54469796?s=200&v=4', docs: 'https://supabase.com/docs' },
-      { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg', docs: 'https://firebase.google.com/docs' },
-      { name: 'Microsoft SQL Server', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg', docs: 'https://learn.microsoft.com/sql/' },
-    ],
-  },
-  // AI/ML split
-  {
-    label: 'AI Frameworks',
-    items: [
-      { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', docs: 'https://pytorch.org/docs/stable/index.html' },
-      { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', docs: 'https://www.tensorflow.org/learn' },
-      { name: 'scikit-learn', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', docs: 'https://scikit-learn.org/stable/' },
-    ],
-  },
-  {
-    label: 'Data & CV',
-    items: [
-      { name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', docs: 'https://pandas.pydata.org/docs/' },
-      { name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', docs: 'https://numpy.org/doc/' },
-      { name: 'OpenCV', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg', docs: 'https://docs.opencv.org/' },
-    ],
-  },
-  {
-    label: 'LLM & RAG',
-    items: [
-      { name: 'Hugging Face', icon: 'https://avatars.githubusercontent.com/u/25720743?s=200&v=4', docs: 'https://huggingface.co/docs' },
-      { name: 'LangChain', icon: 'https://avatars.githubusercontent.com/u/126733545?s=200&v=4', docs: 'https://python.langchain.com/docs/' },
-      { name: 'LlamaIndex', icon: 'https://avatars.githubusercontent.com/u/124794309?s=200&v=4', docs: 'https://docs.llamaindex.ai/' },
-    ],
-  },
-  {
-    label: 'MLOps',
-    items: [
-      { name: 'MLflow', icon: 'https://avatars.githubusercontent.com/u/44920056?s=200&v=4', docs: 'https://mlflow.org/docs/latest/index.html' },
-    ],
-  },
-  // Cloud/DevOps split
-  {
-    label: 'Cloud Providers',
-    items: [
-      { name: 'AWS', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg', docs: 'https://docs.aws.amazon.com/' },
-      { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', docs: 'https://docs.microsoft.com/en-us/azure/' },
-      { name: 'Google Cloud (GCP)', icon: 'https://cdn.simpleicons.org/googlecloud/ffffff', docs: 'https://cloud.google.com/docs' },
-    ],
-  },
-  {
-    label: 'Containers & CI/CD',
-    items: [
-      { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', docs: 'https://docs.docker.com/' },
-      { name: 'Jenkins', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg', docs: 'https://www.jenkins.io/doc/' },
-    ],
-  },
-  {
-    label: 'Platforms & Hosting',
-    items: [
-      { name: 'Vercel', icon: 'https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png', docs: 'https://vercel.com/docs' },
-      { name: 'Netlify', icon: 'https://www.netlify.com/v3/img/components/logomark.png', docs: 'https://docs.netlify.com/' },
-    ],
-  },
-  {
-    label: 'Ops Tools',
-    items: [
+      { name: 'Tailwind CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', docs: 'https://tailwindcss.com/docs' },
       { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', docs: 'https://git-scm.com/doc' },
-      { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', docs: 'https://www.kernel.org/doc/html/latest/' },
+      { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', docs: 'https://docs.github.com/' },
+      { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original-wordmark.svg', docs: 'https://restfulapi.net/' },
     ],
   },
   {
-    label: 'Testing',
+    label: 'AI Technology',
     items: [
-      { name: 'JUnit', icon: 'https://cdn.simpleicons.org/junit5/25A162', docs: 'https://junit.org/junit5/docs/current/user-guide/' },
-      { name: 'Selenium', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg', docs: 'https://www.selenium.dev/documentation/' },
-      { name: 'Jest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg', docs: 'https://jestjs.io/docs/getting-started' },
-      { name: 'Cypress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-plain.svg', docs: 'https://docs.cypress.io/' },
-      { name: 'Playwright', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg', docs: 'https://playwright.dev/docs/intro' },
-      { name: 'PyTest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg', docs: 'https://docs.pytest.org/en/stable/' },
-    ],
-  },
-  {
-    label: 'IDEs',
-    items: [
-      { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg', docs: 'https://code.visualstudio.com/docs' },
-      { name: 'Visual Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg', docs: 'https://learn.microsoft.com/visualstudio/' },
-      { name: 'IntelliJ IDEA', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg', docs: 'https://www.jetbrains.com/help/idea/meet-intellij-idea.html' },
-      { name: 'Eclipse', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg', docs: 'https://help.eclipse.org/' },
-      { name: 'Jupyter Notebook', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg', docs: 'https://docs.jupyter.org/en/latest/' },
-    ],
-  },
-  {
-    label: 'AI Assistants',
-    items: [
-      { name: 'ChatGPT', icon: 'https://cdn.simpleicons.org/openai/ffffff', docs: 'https://platform.openai.com/' },
-      { name: 'Gemini', icon: 'https://cdn.simpleicons.org/googlegemini/ffffff', docs: 'https://ai.google.dev/gemini-api/docs' },
-      { name: 'Claude', icon: 'https://cdn.simpleicons.org/anthropic/ffffff', docs: 'https://docs.anthropic.com/' },
-      { name: 'Cursor', icon: 'https://www.cursor.com/favicon.ico', docs: 'https://www.cursor.com/' },
-      { name: 'DeepSeek', icon: 'https://www.deepseek.com/favicon.ico', docs: 'https://www.deepseek.com/' },
+      { name: 'Python (AI & Automation)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', docs: 'https://docs.python.org/3/' },
+      { name: 'Hugging Face Models', icon: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg', docs: 'https://huggingface.co/docs' },
+      { name: 'OpenAI APIs', icon: 'https://cdn.openai.com/chatgpt/images/chatgpt-logo.png', docs: 'https://platform.openai.com/docs' },
+      { name: 'Gemini / Google AI Studio', icon: 'https://www.gstatic.com/lamda/images/favicon_v1_150160cddceaaa54c1b4d3edfa5b3faf.png', docs: 'https://ai.google.dev/' },
+      { name: 'Runway Gen-2', icon: 'https://runwayml.com/favicon.ico', docs: 'https://runwayml.com/docs' },
+      { name: 'Sora', icon: 'https://openai.com/favicon.ico', docs: 'https://openai.com/sora' },
+      { name: 'Midjourney', icon: 'https://www.midjourney.com/favicon.ico', docs: 'https://docs.midjourney.com/' },
+      { name: 'Stable Diffusion', icon: 'https://stability.ai/favicon.ico', docs: 'https://stability.ai/' },
+      { name: 'ComfyUI', icon: 'https://github.com/comfyanonymous/ComfyUI/raw/master/web/favicon.ico', docs: 'https://github.com/comfyanonymous/ComfyUI' },
+      { name: 'ChatGPT Function Calling / Assistants', icon: 'https://cdn.openai.com/chatgpt/images/chatgpt-logo.png', docs: 'https://platform.openai.com/docs/assistants' },
+      { name: 'Llama Models', icon: 'https://llama.meta.com/static/images/llama_favicon.ico', docs: 'https://llama.meta.com/' },
+      { name: 'Whisper (Speech-to-Text)', icon: 'https://openai.com/favicon.ico', docs: 'https://openai.com/research/whisper' },
+      { name: 'LangChain (Workflows & Agents)', icon: 'https://python.langchain.com/img/favicon.ico', docs: 'https://python.langchain.com/docs/get_started/introduction' },
     ],
   },
 ];
@@ -175,23 +69,8 @@ const itemVariants = {
 const TAB_DEFINITIONS: { key: string; label: string; groups: string[] }[] = [
   {
     key: 'core',
-    label: 'Core',
-    groups: ['Languages', 'Frontend', 'Backend', 'Database'],
-  },
-  {
-    key: 'ai',
-    label: 'AI / ML',
-    groups: ['AI Frameworks', 'Data & CV', 'LLM & RAG', 'MLOps'],
-  },
-  {
-    key: 'cloud',
-    label: 'Cloud & DevOps',
-    groups: ['Cloud Providers', 'Containers & CI/CD', 'Platforms & Hosting', 'Ops Tools'],
-  },
-  {
-    key: 'tooling',
-    label: 'Tooling',
-    groups: ['Testing', 'IDEs', 'AI Assistants'],
+    label: 'Core Technologies',
+    groups: ['Languages & Frameworks', 'Styling & Tools', 'AI Technology'],
   },
 ];
 
@@ -227,7 +106,7 @@ const Technologies = () => {
           Technologies I Work With
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Cutting-edge tools and frameworks for building the future
+          Modern tools for building scalable web applications
         </p>
       </motion.div>
       <div className="flex justify-center gap-2 mb-8 flex-wrap">

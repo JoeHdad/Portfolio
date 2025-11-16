@@ -20,104 +20,66 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     id: 1,
-    year: "August 2025 – Present",
-    title: "Machine Learning Intern",
-    organization: "Elevvo Pathways",
-    location: "Cairo, Egypt",
-    logoSrc: "/elevvo.jpg",
-    logoAlt: "Elevvo Pathways",
-    description: ``,
+    year: "2022",
+    title: "ReactJS Bootcamp",
+    organization: "Gaza Sky Geeks",
+    location: "Gaza",
+    logoSrc: "https://gaza-sky-geeks.org/wp-content/uploads/2020/07/cropped-logo-3.png",
+    logoAlt: "Gaza Sky Geeks",
+    description: "",
     highlights: [
-      "Customer Segmentation (Mall Customers): Scaled and clustered with K-Means/DBSCAN; optimal k=5 via silhouette. Identified high-spend segments and lifted CTR +12% in a hypothetical campaign; computed avg spend per cluster for personas.",
-      "Forest Cover Classification (Covertype): XGBoost/Random Forest reached ~93% accuracy; elevation and distance features dominated importance. Confusion matrix analysis reduced misclassifications between similar conifers.",
-      "Loan Approval Prediction: Addressed imbalance with SMOTE + threshold tuning, improving minority-class F1 by +27% at precision ≈ 0.81; delivered clearer risk stratification.",
-      "Sales Forecasting (Walmart): Engineered time/seasonality features with time-aware CV; XGBoost delivered MAPE ≈ 8.7%, improving planning and stock alignment.",
+      "Attended an intensive ReactJS bootcamp focused on advanced React concepts, JSX, hooks, and component-based architecture.",
+      "Completed a final project that integrated routing, API calls, and reusable components to deliver a real-world web application.",
+      "Strengthened front-end best practices, including responsive design, clean code structure, and deployment workflows.",
+      "Worked in small teams, practicing collaboration, version control, and code reviews to ship features on time.",
     ],
-    type: "experience",
+    type: "education",
     techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg", alt: "PyTorch" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", alt: "TensorFlow" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", alt: "Docker" }
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3" }
     ]
   },
   {
     id: 2,
-    year: "April 2024 – October 2024",
-    title: "Generative AI Trainee",
-    organization: "Digital Egypt Pioneers Initiative",
-    location: "Cairo, Egypt",
-    logoSrc: "/depi.png",
-    logoAlt: "Digital Egypt Pioneers Initiative",
-    description: ``,
+    year: "2021",
+    title: "Web Development (Python & Django) Course",
+    organization: "San’a’ Al-Mustaqbal Academy",
+    location: "Gaza",
+    logoAlt: "San’a’ Al-Mustaqbal Academy",
+    description: "",
     highlights: [
-      "Completed the DEPI Generative AI Training, gaining hands-on experience in machine learning and deep learning techniques.",
-      "Built and trained models using Python, NumPy, Pandas, scikit-learn, and TensorFlow/PyTorch.",
-      "Explored foundational and advanced concepts in neural networks, including CNNs, RNNs, and transformers.",
-      "Designed and implemented Generative AI models such as Variational Autoencoders (VAEs) and GANs for image generation and augmentation.",
-      "Applied prompt engineering and experimented with large language models (LLMs) to solve real-world tasks.",
-      "Contributed to building a mobile-friendly text-to-3D model generation system, integrating Generative AI with mobile deployment frameworks.",
+      "Completed a 9-month program focused on backend web development using Python and Django.",
+      "Learned to design and structure Django projects, manage models, views, templates, and URL routing.",
+      "Built RESTful APIs, integrated relational databases, and handled authentication and authorization.",
+      "Delivered a final full-stack project that combined Django on the backend with a responsive front-end interface.",
     ],
     type: "education",
     techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python", url: "https://www.python.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg", alt: "NumPy", url: "https://numpy.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg", alt: "Pandas", url: "https://pandas.pydata.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg", alt: "scikit-learn", url: "https://scikit-learn.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg", alt: "TensorFlow", url: "https://www.tensorflow.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg", alt: "PyTorch", url: "https://pytorch.org/" },
-      { src: "https://cdn.simpleicons.org/huggingface", alt: "Hugging Face", url: "https://huggingface.co/" },
-      { src: "https://cdn.simpleicons.org/openai", alt: "OpenAI", url: "https://platform.openai.com/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", url: "https://git-scm.com/" }
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg", alt: "Django" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL" }
     ]
   },
   {
     id: 3,
-    year: "July 2024 – August 2024",
-    title: "Front-End Engineer Trainee",
-    organization: "Information Technology Institute",
-    location: "Cairo, Egypt",
-    logoSrc: "/ITI.png",
-    logoAlt: "Information Technology Institute",
-    description: ``,
+    year: "2023",
+    title: "Software Testing & Quality Assurance",
+    organization: "BTI",
+    location: "Gaza",
+    logoAlt: "BTI",
+    description: "",
     highlights: [
-      "Built responsive and interactive web applications using HTML5, CSS3, JavaScript (ES6+), and React.js.",
-      "Applied modern UI/UX principles to create user-friendly interfaces and accessible designs.",
-      "Integrated external RESTful APIs and managed state with React Hooks and Context API.",
-      "Developed a fully functional movie website using React, featuring real-time data fetching, search functionality, and dynamic routing.",
-    ],
-    type: "education",
-    techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React.js", url: "https://reactjs.org/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg", alt: "Bootstrap", url: "https://getbootstrap.com/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", alt: "Figma", url: "https://www.figma.com/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", url: "https://git-scm.com/" }
-    ]
-  },
-  {
-    id: 4,
-    year: "January 2024 – February 2024",
-    title: "Software Engineer Intern",
-    organization: "CodeAlpha",
-    location: "India",
-    logoSrc: "/codealpha.jpg",
-    logoAlt: "CodeAlpha",
-    description: ``,
-    highlights: [
-      "Developed a comprehensive Hotel Management System in Java with room booking, customer management, and billing functionalities.",
-      "Built a Student Grade Tracker application featuring grade calculation, student records management, and performance analytics.",
-      "Created a Banking System with account management, transaction processing, balance tracking, and secure authentication features.",
-      "Applied object-oriented programming principles including inheritance, polymorphism, and encapsulation in all projects.",
-      "Implemented data persistence using file handling and basic database connectivity for reliable data storage.",
+      "Completed a comprehensive Software Testing and QA course covering unit, integration, system, and acceptance testing.",
+      "Practiced writing detailed test plans, test cases, and defect reports aligned with industry standards.",
+      "Gained exposure to automated testing tools and workflows to improve reliability and regression coverage.",
+      "Developed strong attention to detail and analytical skills to identify, document, and help resolve software defects.",
     ],
     type: "experience",
     techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "Java", url: "https://www.oracle.com/java/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg", alt: "IntelliJ IDEA", url: "https://www.jetbrains.com/idea/" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git", url: "https://git-scm.com/" }
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
+      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" }
     ]
   }
 ];
@@ -151,49 +113,48 @@ const About = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Who I Am</h3>
               <p className="text-muted-foreground mb-4">
-                I'm a <span className="font-semibold text-blue-400">full stack engineer</span> who specializes in building intelligent, AI-powered applications that solve complex problems.
+                My name is <span className="font-semibold text-blue-400">Yousef Haddad</span>.
               </p>
               <p className="text-muted-foreground mb-4">
-                With expertise spanning both <span className="font-semibold text-blue-400">frontend and backend development</span>, I focus on creating seamless user experiences backed by robust, scalable architectures.
+                I'm a <span className="font-semibold text-blue-400">Full-Stack Developer</span> and a <span className="font-semibold text-blue-400">Creative Technologist</span> focused on AI-powered interactive experiences.
               </p>
               <p className="text-muted-foreground">
-                Currently, I'm exploring the potential of <span className="font-semibold text-blue-400">AI agents</span> to automate workflows and enhance software capabilities.
+                I'm experienced in building modern web applications, <span className="font-semibold text-blue-400">AI-driven tools</span>, and high-impact digital products with clean architecture and smooth user experiences.
               </p>
               
               <h3 className="text-xl font-semibold mt-8 mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Education</h3>
               <div className="flex flex-col gap-4 mb-6">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20">
-                  <img src="https://eng.asu.edu.eg/public/ext/images/logo-white.png" alt="Ain Shams University" className="w-10 h-10 object-contain rounded" />
+                  <img src="https://eng.asu.edu.eg/public/ext/images/logo-white.png" alt="Islamic University of Gaza" className="w-10 h-10 object-contain rounded" />
                   <div>
-                    <div className="font-semibold text-blue-400">Ain Shams University</div>
-                    <div className="text-sm text-muted-foreground">Faculty of Engineering</div>
-                    <div className="text-xs text-muted-foreground">Computer Engineering & Software Systems • 2021 - Present</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20">
-                  <img src="https://uelresearch.com/wp-content/uploads/2015/02/cropped-uel-logo-2010_rgb2.png" alt="University of East London" className="w-10 h-10 object-cover rounded" />
-                  <div>
-                    <div className="font-semibold text-blue-400">University of East London</div>
-                    <div className="text-sm text-muted-foreground">Faculty of Engineering</div>
-                    <div className="text-xs text-muted-foreground">Computer Science (Dual Degree) • 2022 - Present</div>
+                    <div className="font-semibold text-blue-400">Islamic University of Gaza (IUG)</div>
+                    <div className="text-sm text-muted-foreground">Bachelor's Degree</div>
+                    <div className="text-xs text-muted-foreground">Computer Science • 2013 - 2018</div>
                   </div>
                 </div>
               </div>
               
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Certifications</h3>
               <div className="flex flex-col gap-4">
-                <a href="https://www.coursera.org/account/accomplishments/professional-cert/OP8V0FHK62E5" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
-                  <img src="https://static.cdnlogo.com/logos/i/92/ibm.svg" alt="IBM AI Engineering Professional" className="w-8 h-8" />
+                <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
+                  <img src="https://avatars.githubusercontent.com/u/25720743?s=200&v=4" alt="THE LLM COURSE" className="w-8 h-8" />
                   <div>
-                    <div className="font-semibold text-blue-400">IBM AI Engineering Professional</div>
-                    <div className="text-xs text-muted-foreground">AI/ML Focus</div>
+                    <div className="font-semibold text-blue-400">THE LLM COURSE</div>
+                    <div className="text-xs text-muted-foreground">Hugging Face</div>
                   </div>
                 </a>
-                <a href="https://www.coursera.org/account/accomplishments/professional-cert/O2X1IRNUCOD2" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
-                  <img src="https://static.cdnlogo.com/logos/m/35/meta-platforms.svg" alt="Meta Front End Developer Professional" className="w-8 h-8" />
+                <a href="https://learn.deeplearning.ai/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
+                  <img src="https://cdn.simpleicons.org/deeplearningai/ffffff" alt="DeepLearning" className="w-8 h-8" />
                   <div>
-                    <div className="font-semibold text-blue-400">Meta Front End Engineer Professional</div>
-                    <div className="text-xs text-muted-foreground">Web Dev Focus</div>
+                    <div className="font-semibold text-blue-400">DeepLearning</div>
+                    <div className="text-xs text-muted-foreground">DeepLearning.AI</div>
+                  </div>
+                </a>
+                <a href="https://gaza-sky-geeks.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
+                  <img src="https://cdn.simpleicons.org/google/ffffff" alt="How to Use AI as a Personal Assistant" className="w-8 h-8" />
+                  <div>
+                    <div className="font-semibold text-blue-400">How to Use AI as a Personal Assistant</div>
+                    <div className="text-xs text-muted-foreground">Gaza Sky Geeks</div>
                   </div>
                 </a>
               </div>

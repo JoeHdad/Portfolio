@@ -121,5 +121,5 @@ For any inquiries or suggestions, please reach out through the contact form on t
 ---
 
 <div align="center">
-Made with ❤️ by Saif Hatem
+Made with ❤️ by Yousef Haddad
 </div>

@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             alt={project.title} 
             className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
         </div>
         
         <CardHeader>

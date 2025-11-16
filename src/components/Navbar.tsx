@@ -53,7 +53,7 @@ const Navbar = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-900 rounded-xl blur-2xl opacity-60 group-hover:opacity-90 transition-all duration-500"></div>
             </div>
             <div className="relative z-10 w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-              <span className="text-white font-bold text-xl tracking-tight">SH</span>
+              <span className="text-white font-bold text-xl tracking-tight">YH</span>
             </div>
           </a>
           
