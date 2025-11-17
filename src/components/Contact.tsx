@@ -27,8 +27,8 @@ const contactMethods = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/yousef-haddad-8b1a2b2a6',
-    href: 'https://www.linkedin.com/in/yousef-haddad-8b1a2b2a6',
+    value: 'linkedin.com/in/yousef-haddad-8163ab205',
+    href: 'https://www.linkedin.com/in/yousef-haddad-8163ab205',
     bg: 'bg-blue-800',
     iconColor: 'text-white',
   },

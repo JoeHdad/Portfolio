@@ -44,7 +44,7 @@ A modern, responsive portfolio website showcasing professional experience, proje
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Trimbex/portfolio.git
+   git clone https://github.com/JoeHdad/Portfolio.git
    ```
 
 2. Navigate to the project directory:
