@@ -2,43 +2,55 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 
+const DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
+
 const techGroups = [
   {
     label: 'Languages & Frameworks',
     items: [
-      { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', docs: 'https://developer.mozilla.org/docs/Web/JavaScript' },
-      { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', docs: 'https://www.typescriptlang.org/docs/' },
-      { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', docs: 'https://react.dev/' },
-      { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', docs: 'https://nextjs.org/docs' },
-      { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', docs: 'https://nodejs.org/en/docs' },
-      { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', docs: 'https://docs.python.org/3/' },
+      { name: 'JavaScript', icon: `${DEVICON}/javascript/javascript-original.svg`, docs: 'https://developer.mozilla.org/docs/Web/JavaScript' },
+      { name: 'TypeScript', icon: `${DEVICON}/typescript/typescript-original.svg`, docs: 'https://www.typescriptlang.org/docs/' },
+      { name: 'React', icon: `${DEVICON}/react/react-original.svg`, docs: 'https://react.dev/' },
+      { name: 'Next.js', icon: `${DEVICON}/nextjs/nextjs-original.svg`, docs: 'https://nextjs.org/docs' },
+      { name: 'Node.js', icon: `${DEVICON}/nodejs/nodejs-original.svg`, docs: 'https://nodejs.org/en/docs' },
+      { name: 'Express.js', icon: `${DEVICON}/express/express-original.svg`, docs: 'https://expressjs.com/' },
+      { name: 'Python', icon: `${DEVICON}/python/python-original.svg`, docs: 'https://docs.python.org/3/' },
+      { name: 'Django', icon: `${DEVICON}/django/django-plain.svg`, docs: 'https://docs.djangoproject.com/' },
     ],
   },
   {
-    label: 'Styling & Tools',
+    label: 'Data & Tools',
     items: [
-      { name: 'Tailwind CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', docs: 'https://tailwindcss.com/docs' },
-      { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', docs: 'https://git-scm.com/doc' },
-      { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', docs: 'https://docs.github.com/' },
-      { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original-wordmark.svg', docs: 'https://restfulapi.net/' },
+      { name: 'PostgreSQL', icon: `${DEVICON}/postgresql/postgresql-original.svg`, docs: 'https://www.postgresql.org/docs/' },
+      { name: 'MongoDB', icon: `${DEVICON}/mongodb/mongodb-original.svg`, docs: 'https://www.mongodb.com/docs/' },
+      { name: 'Tailwind CSS', icon: `${DEVICON}/tailwindcss/tailwindcss-original.svg`, docs: 'https://tailwindcss.com/docs' },
+      { name: 'REST APIs', icon: `${DEVICON}/fastapi/fastapi-original.svg`, docs: 'https://restfulapi.net/' },
+      { name: 'Git', icon: `${DEVICON}/git/git-original.svg`, docs: 'https://git-scm.com/doc' },
+      { name: 'GitHub', icon: `${DEVICON}/github/github-original.svg`, docs: 'https://docs.github.com/' },
     ],
   },
   {
-    label: 'AI Technology',
+    label: 'AI & Automation',
     items: [
-      { name: 'Python (AI & Automation)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', docs: 'https://docs.python.org/3/' },
-      { name: 'Hugging Face Models', icon: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg', docs: 'https://huggingface.co/docs' },
-      { name: 'OpenAI APIs', icon: 'https://cdn.openai.com/chatgpt/images/chatgpt-logo.png', docs: 'https://platform.openai.com/docs' },
-      { name: 'Gemini / Google AI Studio', icon: 'https://www.gstatic.com/lamda/images/favicon_v1_150160cddceaaa54c1b4d3edfa5b3faf.png', docs: 'https://ai.google.dev/' },
-      { name: 'Runway Gen-2', icon: 'https://runwayml.com/favicon.ico', docs: 'https://runwayml.com/docs' },
-      { name: 'Sora', icon: 'https://openai.com/favicon.ico', docs: 'https://openai.com/sora' },
-      { name: 'Midjourney', icon: 'https://www.midjourney.com/favicon.ico', docs: 'https://docs.midjourney.com/' },
-      { name: 'Stable Diffusion', icon: 'https://stability.ai/favicon.ico', docs: 'https://stability.ai/' },
-      { name: 'ComfyUI', icon: 'https://github.com/comfyanonymous/ComfyUI/raw/master/web/favicon.ico', docs: 'https://github.com/comfyanonymous/ComfyUI' },
-      { name: 'ChatGPT Function Calling / Assistants', icon: 'https://cdn.openai.com/chatgpt/images/chatgpt-logo.png', docs: 'https://platform.openai.com/docs/assistants' },
-      { name: 'Llama Models', icon: 'https://llama.meta.com/static/images/llama_favicon.ico', docs: 'https://llama.meta.com/' },
-      { name: 'Whisper (Speech-to-Text)', icon: 'https://openai.com/favicon.ico', docs: 'https://openai.com/research/whisper' },
-      { name: 'LangChain (Workflows & Agents)', icon: 'https://python.langchain.com/img/favicon.ico', docs: 'https://python.langchain.com/docs/get_started/introduction' },
+      { name: 'OpenAI APIs', icon: 'https://cdn.simpleicons.org/openai/ffffff', docs: 'https://platform.openai.com/docs' },
+      { name: 'Claude (Anthropic)', icon: 'https://cdn.simpleicons.org/anthropic/ffffff', docs: 'https://docs.claude.com/' },
+      { name: 'Gemini', icon: 'https://cdn.simpleicons.org/googlegemini', docs: 'https://ai.google.dev/' },
+      { name: 'LangChain', icon: 'https://cdn.simpleicons.org/langchain/ffffff', docs: 'https://python.langchain.com/' },
+      { name: 'Hugging Face', icon: 'https://cdn.simpleicons.org/huggingface', docs: 'https://huggingface.co/docs' },
+      { name: 'RAG & Vector DBs', icon: `${DEVICON}/python/python-original.svg`, docs: 'https://docs.trychroma.com/' },
+      { name: 'Google Veo 3', icon: 'https://cdn.simpleicons.org/google/ffffff', docs: 'https://deepmind.google/models/veo/' },
+      { name: 'Runway', icon: 'https://cdn.simpleicons.org/runway/ffffff', docs: 'https://runwayml.com/' },
+    ],
+  },
+  {
+    label: 'Social & Growth',
+    items: [
+      { name: 'Meta Ads Manager', icon: 'https://cdn.simpleicons.org/meta', docs: 'https://www.facebook.com/business/tools/ads-manager' },
+      { name: 'ManyChat', icon: 'https://cdn.simpleicons.org/messenger', docs: 'https://manychat.com/' },
+      { name: 'Instagram', icon: 'https://cdn.simpleicons.org/instagram', docs: 'https://business.instagram.com/' },
+      { name: 'TikTok', icon: 'https://cdn.simpleicons.org/tiktok/ffffff', docs: 'https://www.tiktok.com/business/' },
+      { name: 'Canva', icon: 'https://cdn.simpleicons.org/canva', docs: 'https://www.canva.com/' },
+      { name: 'Analytics & Reporting', icon: 'https://cdn.simpleicons.org/googleanalytics', docs: 'https://analytics.google.com/' },
     ],
   },
 ];
@@ -70,7 +82,7 @@ const TAB_DEFINITIONS: { key: string; label: string; groups: string[] }[] = [
   {
     key: 'core',
     label: 'Core Technologies',
-    groups: ['Languages & Frameworks', 'Styling & Tools', 'AI Technology'],
+    groups: ['Languages & Frameworks', 'Data & Tools', 'AI & Automation', 'Social & Growth'],
   },
 ];
 
@@ -106,9 +118,10 @@ const Technologies = () => {
           Technologies I Work With
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Modern tools for building scalable web applications
+          The stack I use to ship web apps, AI features and automations
         </p>
       </motion.div>
+      {TAB_DEFINITIONS.length > 1 && (
       <div className="flex justify-center gap-2 mb-8 flex-wrap">
         {TAB_DEFINITIONS.map((tab) => (
           <Button
@@ -122,6 +135,7 @@ const Technologies = () => {
           </Button>
         ))}
       </div>
+      )}
       <div className={`w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 ${gridColsClass} gap-y-16 gap-x-12`}>
         {visibleGroups.map((group) => (
           <div key={group.label} className="flex flex-col items-center h-full">

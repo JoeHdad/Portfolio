@@ -21,9 +21,8 @@ import {
 // Helper function to highlight keywords in text with simple bold and colors
 const highlightKeywords = (text: string) => {
   const keywords = [
-    'React', 'Node.js', 'TypeScript', 'AI', 'OpenAI', 'Python', 'AWS', 'Docker', 
-    'SQL', 'NoSQL', 'CSS', 'authentication', 'security', 'performance', 'scalable',
-    'microservices', 'automation', 'intelligent', 'robust', 'optimization'
+    'React', 'Node.js', 'TypeScript', 'AI', 'OpenAI', 'Python', 
+    'SQL', 'NoSQL', 'Django', 'Next.js', 'PostgreSQL', 'MongoDB', 'Claude', 'Gemini', 'LangChain', 'RAG'
   ];
   
   let highlightedText = text;
@@ -40,49 +39,49 @@ export default function FeaturesSectionDemo() {
     {
       title: "Full Stack Development",
       description:
-        "Expert in building complete web applications from frontend to backend with modern technologies like React, Node.js, and TypeScript.",
+        "Complete web applications from database to UI with React, Next.js, Node.js, Django and TypeScript.",
       icon: <IconCode className="w-6 h-6" />,
     },
     {
-      title: "AI & Machine Learning",
+      title: "AI & LLM Integration",
       description:
-        "Specialized in AI-powered applications, automation workflows, and intelligent systems using OpenAI, Python, and advanced ML techniques.",
+        "LLM features, RAG pipelines and agent workflows using OpenAI, Claude, Gemini, LangChain and Python, in Arabic and English.",
       icon: <IconBrain className="w-6 h-6" />,
     },
     {
-      title: "Cloud Architecture",
+      title: "Automation Workflows",
       description:
-        "Experienced in designing scalable cloud solutions with AWS, Docker, and microservices architecture for high-performance applications.",
-      icon: <IconCloud className="w-6 h-6" />,
+        "Workflow automation, OCR pipelines and chatbots that remove manual work from operations, sales and support.",
+      icon: <IconRouteAltLeft className="w-6 h-6" />,
     },
     {
       title: "Database Design",
       description:
-        "Proficient in both SQL and NoSQL databases, data modeling, and building robust data-driven applications with optimal performance.",
+        "SQL and NoSQL data modeling with PostgreSQL and MongoDB, built for audit trails, reporting and performance.",
       icon: <IconDatabase className="w-6 h-6" />,
     },
     {
-      title: "Responsive Design",
+      title: "Responsive Interfaces",
       description:
-        "Creating beautiful, accessible user interfaces that work seamlessly across all devices with modern CSS and design principles.",
+        "Clean, accessible dashboards and interfaces that work across devices, built with Tailwind CSS and modern React.",
       icon: <IconDevices className="w-6 h-6" />,
     },
     {
-      title: "Performance Optimization",
+      title: "Security & Access Control",
       description:
-        "Expert in optimizing applications for speed, efficiency, and user experience through advanced techniques and best practices.",
-      icon: <IconBolt className="w-6 h-6" />,
-    },
-    {
-      title: "Security & Best Practices",
-      description:
-        "Implementing secure authentication, data protection, and following industry best practices for production-ready applications.",
+        "Role-based access, JWT authentication and secure handling of data for production systems.",
       icon: <IconShield className="w-6 h-6" />,
     },
     {
-      title: "Innovation & Problem Solving",
+      title: "Social Media & Growth",
       description:
-        "Passionate about solving complex challenges with creative solutions and staying ahead of emerging technologies and trends.",
+        "Content planning, paid campaigns and performance reporting across Instagram, TikTok, Facebook and YouTube.",
+      icon: <IconBolt className="w-6 h-6" />,
+    },
+    {
+      title: "Team Leadership",
+      description:
+        "Leading small teams through requirements, development, testing and deployment, remote and on-site.",
       icon: <IconRocket className="w-6 h-6" />,
     },
   ];

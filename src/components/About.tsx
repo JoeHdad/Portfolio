@@ -17,72 +17,114 @@ interface TimelineItem {
   highlights?: string[];
 }
 
+const DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
+
 const timelineData: TimelineItem[] = [
   {
     id: 1,
-    year: "2022",
-    title: "ReactJS Bootcamp",
-    organization: "Gaza Sky Geeks",
-    location: "Gaza",
-    logoSrc: "https://gaza-sky-geeks.org/wp-content/uploads/2020/07/cropped-logo-3.png",
-    logoAlt: "Gaza Sky Geeks",
+    year: "Aug 2026 – Present",
+    title: "Social Media Management Officer",
+    organization: "CupTime Trading W.L.L.",
+    location: "Remote",
     description: "",
     highlights: [
-      "Attended an intensive ReactJS bootcamp focused on advanced React concepts, JSX, hooks, and component-based architecture.",
-      "Completed a final project that integrated routing, API calls, and reusable components to deliver a real-world web application.",
-      "Strengthened front-end best practices, including responsive design, clean code structure, and deployment workflows.",
-      "Worked in small teams, practicing collaboration, version control, and code reviews to ship features on time.",
+      "Manage organic and paid social media for CUPTIME brands (Aroom, Cuptime Services, Bincoo, Barsetto) across Instagram, Facebook, TikTok, YouTube and Snapchat.",
+      "Track reach, engagement, follower growth and conversions, and deliver weekly and monthly performance reports with actionable insights.",
+      "Run paid boosts and ad campaigns: budgets, audience targeting and ROI optimization.",
+      "Build ChatBot workflows in ManyChat and Chatfuel for Messenger, Instagram DM and website chat, improved through A/B testing.",
     ],
-    type: "education",
-    techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "React" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "JavaScript" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "HTML5" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "CSS3" }
-    ]
+    type: "experience",
   },
   {
     id: 2,
-    year: "2021",
-    title: "Web Development (Python & Django) Course",
-    organization: "San’a’ Al-Mustaqbal Academy",
-    location: "Gaza",
-    logoAlt: "San’a’ Al-Mustaqbal Academy",
+    year: "Oct 2025 – Dec 2025",
+    title: "Full-Stack Developer",
+    organization: "ATM Maintenance System – Saudi National Bank",
+    location: "Cairo",
     description: "",
     highlights: [
-      "Completed a 9-month program focused on backend web development using Python and Django.",
-      "Learned to design and structure Django projects, manage models, views, templates, and URL routing.",
-      "Built RESTful APIs, integrated relational databases, and handled authentication and authorization.",
-      "Delivered a final full-stack project that combined Django on the backend with a responsive front-end interface.",
-    ],
-    type: "education",
-    techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg", alt: "Django" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", alt: "PostgreSQL" }
-    ]
-  },
-  {
-    id: 3,
-    year: "2023",
-    title: "Software Testing & Quality Assurance",
-    organization: "BTI",
-    location: "Gaza",
-    logoAlt: "BTI",
-    description: "",
-    highlights: [
-      "Completed a comprehensive Software Testing and QA course covering unit, integration, system, and acceptance testing.",
-      "Practiced writing detailed test plans, test cases, and defect reports aligned with industry standards.",
-      "Gained exposure to automated testing tools and workflows to improve reliability and regression coverage.",
-      "Developed strong attention to detail and analytical skills to identify, document, and help resolve software defects.",
+      "Engineered an ATM maintenance management system serving multiple cities across Saudi Arabia.",
+      "Built role-based access control with JWT authentication for Data Host, Technician and Supervisor roles.",
+      "Created an automated reporting engine with PDF reports, email notifications and Excel bulk imports.",
+      "Designed the PostgreSQL schema for maintenance tracking and audit trails, plus a responsive React dashboard with live status updates.",
     ],
     type: "experience",
     techStack: [
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "Python" },
-      { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", alt: "Git" }
-    ]
-  }
+      { src: `${DEVICON}/react/react-original.svg`, alt: "React" },
+      { src: `${DEVICON}/django/django-plain.svg`, alt: "Django" },
+      { src: `${DEVICON}/postgresql/postgresql-original.svg`, alt: "PostgreSQL" },
+    ],
+  },
+  {
+    id: 3,
+    year: "Apr 2025 – Present",
+    title: "Full-Stack & AI Engineer",
+    organization: "Tmooh | طموح",
+    location: "Remote",
+    description: "",
+    highlights: [
+      "Design and build full-stack web applications for clients with React, Next.js, Node.js and Django.",
+      "Integrate AI features into client products, including LLM-powered workflows and automation.",
+      "Take projects from requirements and architecture through development, testing and deployment.",
+    ],
+    type: "experience",
+    techStack: [
+      { src: `${DEVICON}/nextjs/nextjs-original.svg`, alt: "Next.js" },
+      { src: `${DEVICON}/nodejs/nodejs-original.svg`, alt: "Node.js" },
+      { src: `${DEVICON}/python/python-original.svg`, alt: "Python" },
+    ],
+  },
+  {
+    id: 4,
+    year: "Mar 2025 – Dec 2025",
+    title: "Social Media Manager & AI Video Creator",
+    organization: "FOR-Palestine",
+    location: "Remote",
+    description: "",
+    highlights: [
+      "Managed the organization's social media channels, from content planning to publishing.",
+      "Produced written, visual and audio content with generative AI tools, including AI-generated video, to deliver humanitarian messages to a global audience.",
+    ],
+    type: "experience",
+  },
+  {
+    id: 5,
+    year: "Apr 2023 – Present",
+    title: "Software Developer (Contract)",
+    organization: "Wood Industries Union",
+    location: "Gaza",
+    description: "",
+    highlights: [
+      "Lead the design and development of the organization's digital systems as Software Lead and Full-Stack Developer.",
+      "Architect and build MERN applications, from requirements gathering through testing and deployment.",
+      "Coordinate a cross-functional remote and on-site team, and set standards for code quality, version control and documentation.",
+    ],
+    type: "experience",
+    techStack: [
+      { src: `${DEVICON}/mongodb/mongodb-original.svg`, alt: "MongoDB" },
+      { src: `${DEVICON}/express/express-original.svg`, alt: "Express.js" },
+      { src: `${DEVICON}/react/react-original.svg`, alt: "React" },
+      { src: `${DEVICON}/nodejs/nodejs-original.svg`, alt: "Node.js" },
+    ],
+  },
 ];
+
+const certifications = [
+  { title: "The LLM Course", org: "Hugging Face", year: "2025", href: "https://huggingface.co/learn/llm-course", icon: "https://avatars.githubusercontent.com/u/25720743?s=200&v=4" },
+  { title: "How to Use AI as a Personal Assistant", org: "Gaza Sky Geeks", year: "2025", href: "https://gaza-sky-geeks.org/" },
+  { title: "Software Testing & Quality Assurance", org: "BTI", year: "2023" },
+  { title: "Web Development with Python & Django", org: "San'a' Al-Mustaqbal Academy", year: "2022" },
+  { title: "ReactJS Bootcamp", org: "Gaza Sky Geeks", year: "2021", href: "https://gaza-sky-geeks.org/" },
+];
+
+const initials = (name = "") =>
+  name
+    .replace(/[^A-Za-z\s]/g, " ")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join("");
 
 const COLLAPSED_MAX_HEIGHT_PX = 224; // ~ h-56
 
@@ -104,7 +146,7 @@ const About = () => {
   }, []);
   return (
     <section id="about" className="section-container">
-      <h2 className="section-title">About Me</h2>
+      <h2 className="section-title">About Me & Experience</h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Bio */}
@@ -113,50 +155,50 @@ const About = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Who I Am</h3>
               <p className="text-muted-foreground mb-4">
-                My name is <span className="font-semibold text-blue-400">Yousef Haddad</span>.
+                I'm <span className="font-semibold text-blue-400">Yousef Haddad</span>, a <span className="font-semibold text-blue-400">Full-Stack Software Engineer</span> based in Cairo with 5+ years of experience building production web apps.
               </p>
               <p className="text-muted-foreground mb-4">
-                I'm a <span className="font-semibold text-blue-400">Full-Stack Developer</span> and a <span className="font-semibold text-blue-400">Creative Technologist</span> focused on AI-powered interactive experiences.
+                For the past 3 years I've worked heavily with <span className="font-semibold text-blue-400">AI</span>: LLM integrations, RAG, agent workflows and automation, in both Arabic and English.
               </p>
               <p className="text-muted-foreground">
-                I'm experienced in building modern web applications, <span className="font-semibold text-blue-400">AI-driven tools</span>, and high-impact digital products with clean architecture and smooth user experiences.
+                I also manage social media and paid campaigns for consumer brands in the Gulf, so I care about how products actually perform with real users.
               </p>
-              
+
               <h3 className="text-xl font-semibold mt-8 mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Education</h3>
               <div className="flex flex-col gap-4 mb-6">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20">
-                  <img src="https://eng.asu.edu.eg/public/ext/images/logo-white.png" alt="Islamic University of Gaza" className="w-10 h-10 object-contain rounded" />
+                  <div className="w-10 h-10 shrink-0 rounded bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xs font-bold">IUG</div>
                   <div>
                     <div className="font-semibold text-blue-400">Islamic University of Gaza (IUG)</div>
-                    <div className="text-sm text-muted-foreground">Bachelor's Degree</div>
-                    <div className="text-xs text-muted-foreground">Computer Science • 2013 - 2018</div>
+                    <div className="text-sm text-muted-foreground">Bachelor of Computer Science</div>
+                    <div className="text-xs text-muted-foreground">2018 – 2023</div>
                   </div>
                 </div>
               </div>
-              
+
               <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">Certifications</h3>
-              <div className="flex flex-col gap-4">
-                <a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
-                  <img src="https://avatars.githubusercontent.com/u/25720743?s=200&v=4" alt="THE LLM COURSE" className="w-8 h-8" />
-                  <div>
-                    <div className="font-semibold text-blue-400">THE LLM COURSE</div>
-                    <div className="text-xs text-muted-foreground">Hugging Face</div>
-                  </div>
-                </a>
-                <a href="https://learn.deeplearning.ai/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
-                  <img src="https://cdn.simpleicons.org/deeplearningai/ffffff" alt="DeepLearning" className="w-8 h-8" />
-                  <div>
-                    <div className="font-semibold text-blue-400">DeepLearning</div>
-                    <div className="text-xs text-muted-foreground">DeepLearning.AI</div>
-                  </div>
-                </a>
-                <a href="https://gaza-sky-geeks.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20 hover:bg-blue-900/20 transition">
-                  <img src="https://cdn.simpleicons.org/google/ffffff" alt="How to Use AI as a Personal Assistant" className="w-8 h-8" />
-                  <div>
-                    <div className="font-semibold text-blue-400">How to Use AI as a Personal Assistant</div>
-                    <div className="text-xs text-muted-foreground">Gaza Sky Geeks</div>
-                  </div>
-                </a>
+              <div className="flex flex-col gap-3">
+                {certifications.map((cert) => {
+                  const inner = (
+                    <>
+                      {cert.icon ? (
+                        <img src={cert.icon} alt="" className="w-8 h-8 shrink-0 rounded" />
+                      ) : (
+                        <div className="w-8 h-8 shrink-0 rounded bg-blue-900/40 border border-blue-500/30 flex items-center justify-center text-[10px] font-bold text-blue-300">{initials(cert.org)}</div>
+                      )}
+                      <div>
+                        <div className="font-semibold text-blue-400 leading-snug">{cert.title}</div>
+                        <div className="text-xs text-muted-foreground">{cert.org} • {cert.year}</div>
+                      </div>
+                    </>
+                  );
+                  const cls = "flex items-center gap-3 p-3 rounded-lg bg-black/30 border border-blue-500/20";
+                  return cert.href ? (
+                    <a key={cert.title} href={cert.href} target="_blank" rel="noopener noreferrer" className={`${cls} hover:bg-blue-900/20 transition`}>{inner}</a>
+                  ) : (
+                    <div key={cert.title} className={cls}>{inner}</div>
+                  );
+                })}
               </div>
             </CardContent>
           </Card>
@@ -193,7 +235,7 @@ const About = () => {
                               className="w-full h-full object-contain p-1"
                             />
                           ) : (
-                            <span className="text-[10px] text-muted-foreground">Logo</span>
+                            <span className="text-xs font-bold text-blue-300">{initials(item.organization)}</span>
                           )}
                         </div>
                       </div>

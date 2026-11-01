@@ -5,24 +5,15 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 // Project categories
-type ProjectCategory = 'All' | 'Web Development' | 'AI/ML' | 'Computer Vision' | 'Systems';
+type ProjectCategory = 'All' | 'Web Development' | 'AI/ML' | 'Systems';
 
 // Extended project interface - now supports multiple categories
 interface ExtendedProject extends Project {
   categories: ProjectCategory[]; // Changed to array for multiple categories
 }
 
-// Sample projects data - Professional Experience and GitHub Projects
+// Projects data (work experience lives in the About timeline)
 const projectsData: ExtendedProject[] = [
-  {
-    id: 1,
-    title: "Software Developer - Wood Industries Union",
-    description: "Contract role developing web solutions for Wood Industries Union. Led strategic thinking initiatives while managing team collaboration and web project development. Applied attention to detail throughout the development lifecycle, ensuring high-quality deliverables for both remote and on-site operations in the Gaza Strip region.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1470&q=80",
-    tags: ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "Team Leadership", "Web Project Management"],
-    categories: ["Web Development"],
-    githubUrl: "https://github.com/JoeHdad"
-  },
   {
     id: 2,
     title: "ATM Maintenance System",
@@ -33,15 +24,6 @@ const projectsData: ExtendedProject[] = [
     githubUrl: "https://github.com/JoeHdad/atm_maintenance-"
   },
   {
-    id: 3,
-    title: "Palestinian Heritage",
-    description: "Cultural preservation project showcasing Palestinian heritage and traditions. This project aims to document and present the rich cultural heritage of Palestine through digital platforms, preserving historical narratives and traditional practices for future generations.",
-    image: "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=1470&q=80",
-    tags: ["Cultural Preservation", "Digital Heritage", "Web Development", "Documentation"],
-    categories: ["Web Development"],
-    githubUrl: "https://github.com/JoeHdad/Palestinian_Heritage"
-  },
-  {
     id: 4,
     title: "RAG Story Engine",
     description: "Fully modular Retrieval-Augmented Generation pipeline built for long-form narrative processing. Features preprocessing, chunking, Gemini embeddings, ChromaDB vector storage, retrieval, and complete inference workflow. Includes both CLI interface and Streamlit web application for querying and analyzing Arabic stories, specifically designed for narrative text processing with semantic search capabilities.",
@@ -49,6 +31,15 @@ const projectsData: ExtendedProject[] = [
     tags: ["Python", "RAG", "Gemini Embeddings", "ChromaDB", "Streamlit", "Vector Search", "NLP", "Arabic NLP"],
     categories: ["AI/ML"],
     githubUrl: "https://github.com/JoeHdad/rag-story-engine"
+  },
+  {
+    id: 3,
+    title: "Palestinian Heritage",
+    description: "Cultural preservation project showcasing Palestinian heritage and traditions. This project aims to document and present the rich cultural heritage of Palestine through digital platforms, preserving historical narratives and traditional practices for future generations.",
+    image: "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=1470&q=80",
+    tags: ["Cultural Preservation", "Digital Heritage", "Web Development", "Documentation"],
+    categories: ["Web Development"],
+    githubUrl: "https://github.com/JoeHdad/Palestinian_Heritage"
   },
   {
     id: 5,
@@ -65,7 +56,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>('All');
   const [showMore, setShowMore] = useState(false);
   
-  const categories: ProjectCategory[] = ['All', 'Web Development', 'AI/ML', 'Computer Vision', 'Systems'];
+  const categories: ProjectCategory[] = ['All', 'Web Development', 'AI/ML', 'Systems'];
   
   // Filter projects based on selected category (now supports multiple categories per project)
   const filteredProjects = useMemo(() => {
@@ -96,8 +87,8 @@ const Projects = () => {
         viewport={{ once: true }}
       >
         <p className="text-lg text-gray-300 leading-relaxed">
-          Explore my collection of innovative projects that showcase my expertise in AI, web development, and software engineering. 
-          Each project represents a unique solution to real-world challenges, combining cutting-edge technologies with practical applications.
+          A selection of things I've built, from a production maintenance platform for Saudi National Bank to an Arabic RAG engine.
+          Each one links to its source on GitHub.
         </p>
       </motion.div>
       

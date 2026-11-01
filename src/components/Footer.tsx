@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Code2, Heart, ArrowUp, Atom, FileCode, Palette, Zap } from 'lucide-react';
-import VisitorCounter from './VisitorCounter';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,7 +38,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">
-                  {currentYear} Yousef Haddad. All rights reserved.
+                  © {currentYear} Yousef Haddad. All rights reserved.
                 </p>
                 <p className="text-gray-500 text-xs mt-1">
                   Built with <Heart className="inline w-3 h-3 text-red-500" /> and <Code2 className="inline w-3 h-3 text-blue-500" />
@@ -47,9 +46,8 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Right side - Tech stack icons and visitor counter */}
+            {/* Right side - Tech stack icons */}
             <div className="flex items-center space-x-6">
-              <VisitorCounter />
               <div className="flex items-center space-x-4">
                 {techStack.map((tech) => (
                   <div
