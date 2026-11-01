@@ -9,7 +9,7 @@ Live: **https://yousefhaddad.netlify.app**
 - React 18 + TypeScript, built with Vite
 - Tailwind CSS and shadcn/ui components
 - Framer Motion for animations
-- Netlify (hosting + serverless functions for the visitor counter, backed by Upstash Redis)
+- Netlify (hosting)
 - Web3Forms for the contact form
 
 ## Run locally
@@ -35,18 +35,6 @@ Then open http://localhost:8080.
 | Contact info and form | `src/components/Contact.tsx` |
 | CV download | `public/Yousef_Haddad_CV.pdf` |
 | SEO / social preview | `index.html`, `public/og-image.png` |
-
-## Environment variables
-
-The visitor counter needs these set in **Netlify → Site settings → Environment variables** (see `.env.example`). Never commit real values to the repo.
-
-```
-KV_URL
-KV_REST_API_URL
-KV_REST_API_TOKEN
-KV_REST_API_READ_ONLY_TOKEN
-REDIS_URL
-```
 
 ## Build & deploy
 

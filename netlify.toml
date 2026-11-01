@@ -1,18 +1,6 @@
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
   publish = "dist"
-
-[functions]
-  external_node_modules = ["@vercel/kv"]
-
-# Secrets (KV_URL, KV_REST_API_URL, KV_REST_API_TOKEN, KV_REST_API_READ_ONLY_TOKEN, REDIS_URL)
-# must be set in Netlify: Site settings → Environment variables. Never commit them here.
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
 
 # Handle client-side routing
 [[redirects]]
