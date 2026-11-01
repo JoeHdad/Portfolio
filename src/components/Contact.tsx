@@ -60,7 +60,7 @@ const StackOverflowIcon = () => (
   </svg>
 );
 
-const codingPlatforms = [];
+const codingPlatforms: { label: string; href: string; icon: React.FC }[] = [];
 
 const ProfessionalSummary = () => (
   <Card className="glowing-card bg-gray-900/70 border-gray-800 rounded-xl transition-all duration-300 overflow-hidden h-full flex flex-col justify-center">
@@ -69,7 +69,7 @@ const ProfessionalSummary = () => (
     </CardHeader>
     <CardContent>
       <p className="text-gray-300 text-base mb-8">
-              I'm a Full Stack Engineer with a specialization in AI and autonomous agents, creating intuitive and intelligent applications that solve complex problems.
+              I'm a Full-Stack Software Engineer and AI Automation Engineer, open to remote roles and freelance projects. The fastest way to reach me is email.
             </p>
             <div className="space-y-4 mb-8">
         {contactMethods.map((method) => (
@@ -226,8 +226,8 @@ const ContactForm = () => {
           </div>
           <div className="space-y-2">
             <label className="block text-base font-semibold text-white mb-1">Reason for Contact</label>
-            <div className="flex gap-3">
-              {['Freelance', 'Collaboration', 'General Inquiry'].map(option => (
+            <div className="flex flex-wrap gap-3">
+              {['Job Opportunity', 'Freelance', 'Collaboration', 'General Inquiry'].map(option => (
                 <button
                   type="button"
                   key={option}

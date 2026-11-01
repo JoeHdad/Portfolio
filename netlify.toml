@@ -6,12 +6,8 @@
 [functions]
   external_node_modules = ["@vercel/kv"]
 
-[context.production.environment]
-  KV_URL = "rediss://default:AY7lAAIncDFmYmI4MWQyOGZkMmE0OWFkYjVjMjMxZWVkZGJjYjNhN3AxMzY1ODE@secure-dassie-36581.upstash.io:6379"
-  KV_REST_API_URL = "https://secure-dassie-36581.upstash.io"
-  KV_REST_API_TOKEN = "AY7lAAIncDFmYmI4MWQyOGZkMmE0OWFkYjVjMjMxZWVkZGJjYjNhN3AxMzY1ODE"
-  KV_REST_API_READ_ONLY_TOKEN = "Ao7lAAIgcDGj6wPmySXx-N7qoPYcamXiHDwcTxzI7Di3qgAGyv7Omw"
-  REDIS_URL = "rediss://default:AY7lAAIncDFmYmI4MWQyOGZkMmE0OWFkYjVjMjMxZWVkZGJjYjNhN3AxMzY1ODE@secure-dassie-36581.upstash.io:6379"
+# Secrets (KV_URL, KV_REST_API_URL, KV_REST_API_TOKEN, KV_REST_API_READ_ONLY_TOKEN, REDIS_URL)
+# must be set in Netlify: Site settings → Environment variables. Never commit them here.
 
 [[redirects]]
   from = "/api/*"

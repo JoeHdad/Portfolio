@@ -21,7 +21,7 @@ Your portfolio now includes **two visitor counter components**:
 ### **Option 1: CountAPI.xyz (Free & Simple)**
 ```javascript
 // Already implemented in VisitorCounter.tsx
-const response = await fetch('https://api.countapi.xyz/hit/saifhatem.dev/visits');
+const response = await fetch('https://api.countapi.xyz/hit/yousefhaddad.netlify.app/visits');
 ```
 
 **Pros:** Free, no registration, works immediately
@@ -78,7 +78,7 @@ const analyticsDataClient = new BetaAnalyticsDataClient();
 
 ### **For CountAPI.xyz (Recommended for simplicity):**
 1. ✅ Already implemented
-2. Replace `'saifhatem.dev'` with your actual domain
+2. Replace `'yousefhaddad.netlify.app'` with your actual domain
 3. No additional setup required
 
 ### **For Firebase Real-time:**

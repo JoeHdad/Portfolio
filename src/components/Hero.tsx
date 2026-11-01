@@ -2,13 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import AnimatedText from './AnimatedText';
-import { Github, Linkedin, Eye } from 'lucide-react';
+import { Github, Linkedin, Eye, Mail, FileDown } from 'lucide-react';
+
+const socialLinks = [
+  { href: 'https://github.com/JoeHdad', label: 'GitHub', icon: Github },
+  { href: 'https://www.linkedin.com/in/yousef-haddad-8163ab205', label: 'LinkedIn', icon: Linkedin },
+  { href: 'mailto:yossefhaddad20@gmail.com', label: 'Email', icon: Mail },
+];
 
 const Hero = () => {
-
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-36">
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
@@ -32,7 +36,7 @@ const Hero = () => {
               </motion.span>
               , I'm Yousef Haddad
             </span>
-            <span className="block mt-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Creative Technologist focused on AI-driven interactive experiences.</span>
+            <span className="block mt-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Full-Stack Software Engineer & AI Automation Engineer</span>
           </motion.h1>
           
           <motion.h2 
@@ -44,11 +48,11 @@ const Hero = () => {
             <span className="block">I turn ideas into</span>
             <AnimatedText 
               text={[
-                "AI that ships",
-                "Full-stack from pixel to production",
-                "Cloud-native at scale",
+                "production web apps",
+                "AI features that ship",
+                "automations that save hours",
                 "LLM agents & data pipelines"
-              ]} 
+              ]}
               className="text-blue-400 font-medium" 
             />
           </motion.h2>
@@ -59,7 +63,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-           Full-Stack Developer crafting delightful, production-ready experiences with AI-driven interactive technologies.
+            5+ years building with React, Next.js, Node.js and Django. Today I focus on LLM integrations, agent workflows and automation, based in Cairo and working remotely.
           </motion.p>
           
           {/* Social Icons above buttons */}
@@ -69,18 +73,21 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
-            <a href="https://github.com/JoeHdad" target="_blank" rel="noopener noreferrer" className="group">
-              <div className="relative p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-purple-600/0 rounded-xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-150 group-hover:scale-100"></div>
-                <Github className="w-6 h-6 relative z-10 text-white group-hover:text-blue-400 transition-colors duration-300" />
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/yousef-haddad-8b1a2b2a6" target="_blank" rel="noopener noreferrer" className="group">
-              <div className="relative p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-purple-600/0 rounded-xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-150 group-hover:scale-100"></div>
-                <Linkedin className="w-6 h-6 relative z-10 text-white group-hover:text-blue-400 transition-colors duration-300" />
-              </div>
-            </a>
+            {socialLinks.map(({ href, label, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                aria-label={label}
+                className="group"
+              >
+                <div className="relative p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-purple-600/0 rounded-xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-150 group-hover:scale-100"></div>
+                  <Icon className="w-6 h-6 relative z-10 text-white group-hover:text-blue-400 transition-colors duration-300" />
+                </div>
+              </a>
+            ))}
           </motion.div>
           
           <motion.div 
@@ -89,9 +96,17 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.6 }}
           >
-            <Button className="py-6 px-8 bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2">
-              <Eye className="w-5 h-5 mr-2" />
-              <a href="#projects">My Work</a>
+            <Button asChild className="py-6 px-8 bg-blue-600 hover:bg-blue-700 text-white">
+              <a href="#projects" className="flex items-center gap-2">
+                <Eye className="w-5 h-5" />
+                My Work
+              </a>
+            </Button>
+            <Button asChild variant="outline" className="py-6 px-8 bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white">
+              <a href="/Yousef_Haddad_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <FileDown className="w-5 h-5" />
+                Download CV
+              </a>
             </Button>
           </motion.div>
           

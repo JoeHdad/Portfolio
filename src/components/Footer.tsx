@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-gray-400 text-sm">
-                  {currentYear} Yousef Haddad. All rights reserved.
+                  © {currentYear} Yousef Haddad. All rights reserved.
                 </p>
                 <p className="text-gray-500 text-xs mt-1">
                   Built with <Heart className="inline w-3 h-3 text-red-500" /> and <Code2 className="inline w-3 h-3 text-blue-500" />
